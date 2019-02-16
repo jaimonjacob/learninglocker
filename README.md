@@ -1,7 +1,7 @@
 # Learning locker LRS installation in a Ubuntu 14.04 LTS server
 
 ## Requirements
-Ubuntu 14.04 server with a minimum of 2 GB RAM and 40 GB storage.The ports need to be opened
+Ubuntu 14.04 server with a minimum of 2 GB RAM.
 
 ## Steps
 
