@@ -25,10 +25,11 @@ sudo apt-get install certbot python-certbot-apache
 ```
 
 ## Remove apache
+```
 sudo service apache2 stop
 sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
 sudo apt-get autoremove
-
+```
 ### Install Node.js
 ```
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
