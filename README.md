@@ -10,9 +10,9 @@ Ubuntu 14.04 server with a minimum of 2 GB RAM.
 sudo apt-get update
 sudo apt-get upgrade
 ```
-## Install Nginx server
+## Install apache
 ```
-sudo apt-get install nginx
+sudo apt-get install apache2 -y
 ```
 ## Set up HTTPS
 ```
@@ -21,9 +21,14 @@ sudo apt-get install software-properties-common
 sudo add-apt-repository universe
 sudo add-apt-repository ppa:certbot/certbot
 sudo apt-get update
-sudo apt-get install certbot python-certbot-nginx 
-sudo certbot --nginx
+sudo apt-get install certbot python-certbot-apache 
 ```
+
+## Remove apache
+sudo service apache2 stop
+sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
+sudo apt-get autoremove
+
 ### Install Node.js
 ```
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
