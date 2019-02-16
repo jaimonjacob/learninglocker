@@ -42,3 +42,20 @@ sudo service mongod start
 wget -qO deployll.sh http://lrnloc.kr/installv2
 sudo bash deployll.sh
 ```
+
+# Extra
+
+## Create a Bookmarklet to record your learning experiences
+```
+javascript: function rbm() {
+    window.rbmAuth = "LRS key", window.rbmEndpoint = "LRS endpoint", window.rbmEmail = "your e-mail", window.rbmName = "your name";
+    var a = document,
+        b = a.createElement("sc" + "ript"),
+        c = a.body,
+        d = a.location;
+    b.setAttribute("src", "https://tincanapi.com/wp-content/assets/Bookmarklet/3.4.0/bookmarklet-min.js");
+    c.appendChild(b)
+}
+rbm();
+void 0
+```
